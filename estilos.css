@@ -1,0 +1,64 @@
+/* Variables CSS */
+:root {
+    --color-principal: #eb0707;
+    --color-secundario: #f4f4f4;
+    --color-texto: #333;
+    --fuente-principal: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: var(--color-principal);
+    color: rgb(241, 240, 245);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+/* CSS hack para IE10 y versiones anteriores */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body {
+        background-color: #e0e0e0;
+    }
+}
